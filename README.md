@@ -6,10 +6,10 @@ The full guide describing how to use this repository is located [here](https://b
 
 ## Examples
 
-| File                                                         | Description                        |
-| ------------------------------------------------------------ | ---------------------------------- |
-| [local-example/buildspec.yaml](local-example/buildspec.yaml) | Runs locally on AWS infrastructure |
-| [cloud-example/buildspec.yaml](cloud-example/buildspec.yaml) | Runs on k6 cloud                   |
+| File                                                       | Description                        |
+| ---------------------------------------------------------- | ---------------------------------- |
+| [local-example/buildspec.yml](local-example/buildspec.yml) | Runs locally on AWS infrastructure |
+| [cloud-example/buildspec.yml](cloud-example/buildspec.yml) | Runs on k6 cloud                   |
 
 ## Run Local
 
