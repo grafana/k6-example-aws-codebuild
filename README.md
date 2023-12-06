@@ -18,7 +18,7 @@ The full guide describing how to use this repository is located [here](https://k
 k6 run scripts/test.js
 
 # Run via Docker
-docker run -i loadimpact/k6 run - <scripts/test.js
+docker run -i grafana/k6 run - <scripts/test.js
 ```
 
 ## Run Cloud
@@ -29,8 +29,8 @@ k6 login cloud --token <YOUR_K6_CLOUD_API_TOKEN>
 k6 cloud scripts/cloud-test.js
 
 # Run via Docker
-docker run -i -e K6_CLOUD_TOKEN=<API_TOKEN> loadimpact/k6 cloud - <scripts/cloud-test.js
+docker run -i -e K6_CLOUD_TOKEN=<API_TOKEN> grafana/k6 cloud - <scripts/cloud-test.js
 
 # Alternative Docker version with mounting option
-docker run -i -e K6_CLOUD_TOKEN=<API_TOKEN> -v "$PWD/scripts:/cloud-test.js" loadimpact/k6 cloud /cloud-test.js
+docker run -i -e K6_CLOUD_TOKEN=<API_TOKEN> -v "$PWD/scripts:/cloud-test.js" grafana/k6 cloud /cloud-test.js
 ```

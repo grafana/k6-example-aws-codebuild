@@ -7,12 +7,12 @@ env:
 phases:
   pre_build:
     commands:
-      - echo Pull loadimpact/k6 image..
-      - docker pull loadimpact/k6
+      - echo Pull grafana/k6 image..
+      - docker pull grafana/k6
   build:
     commands:
       - echo Run performance test
-      - docker run -i -e K6_CLOUD_TOKEN=${K6_CLOUD_TOKEN} loadimpact/k6 cloud - <scripts/cloud-test.js
+      - docker run -i -e K6_CLOUD_TOKEN=${K6_CLOUD_TOKEN} grafana/k6 cloud - <scripts/cloud-test.js
   post_build:
     commands:
       - echo Performance test complete
